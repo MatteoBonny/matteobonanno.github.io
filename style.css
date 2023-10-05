@@ -176,22 +176,23 @@ body {
   }
   
 #top:after {
-content: '';
-position: absolute;
-width: 100%;
-transform: scaleX(0);
-height: 2px;
-bottom: 5px; /* Modifica il valore per ridurre lo spazio tra la parola e la sottolineatura */
-left: 0;
-background-color: #ca0080;
-transform-origin: bottom right;
-transition: transform 0.25s ease-out;
+    content: '';
+    position: absolute;
+    width: 50%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 5px;
+    left: 25%; 
+    background-color: #ffcc00;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
 }
-  
+
 #top:hover:after {
-transform: scaleX(1);
-transform-origin: bottom left;
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
+
 
 @media only screen and (max-width: 600px) {
     body {
