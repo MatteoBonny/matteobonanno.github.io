@@ -140,6 +140,9 @@ body {
     .card h2{
         font-size: 1rem;
     }
+    .top a{
+        font-size: 2rem;
+    }
 }
 
 .logo {
