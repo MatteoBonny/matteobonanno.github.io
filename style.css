@@ -199,7 +199,7 @@ transform-origin: bottom left;
     }
     .card {
         height: 7vh;
-        width: 14vh;
+        width: 13vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -215,7 +215,7 @@ transform-origin: bottom left;
         font-size: 4rem;
     }
     .nav-link {
-        font-size: 0.7rem; 
+        font-size: 0.6rem; 
     }
 }
 
