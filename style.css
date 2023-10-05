@@ -208,14 +208,14 @@ transform-origin: bottom left;
     }
     
     .card h2 {
-        font-size: 0.5rem;
+        font-size: 0.6rem;
     }
     
     .top a {
         font-size: 4rem;
     }
     .nav-link {
-        font-size: 14px; 
+        font-size: 0.7rem; 
     }
 }
 
