@@ -6,6 +6,7 @@ body {
     flex-direction: column; /* Aggiunto per consentire il posizionamento verticale */
     align-items: center;
     height: 100vh;
+    cursor: url("point.png"), auto;
     /* background-image: url("BG.png"); */
 }
 @font-face {
