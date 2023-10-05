@@ -194,9 +194,12 @@ transform-origin: bottom left;
 }
 
 @media only screen and (max-width: 600px) {
+    body {
+        overflow-x: hidden;
+    }
     .card {
-        height: 10vh;
-        width: 17vh;
+        height: 7vh;
+        width: 14vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -214,19 +217,5 @@ transform-origin: bottom left;
     .nav-link {
         font-size: 14px; 
     }
-
-    .container {
-        width: 100%;
-        max-width: 100%;
-       
-    }
 }
 
-.container {
-    width: 100%;
-    max-width: 100%;
-    /* Altri stili... */
-}
-.overflow-hidden-container {
-    overflow-x: hidden;
-}
