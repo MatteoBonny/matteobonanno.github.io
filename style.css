@@ -135,9 +135,9 @@ body {
     transform: rotate(-90deg);
 }
 
-@media screen and (max-width: 600px) {
-    .card {
-        font-size: 1px !important;
+@media only screen and (max-width: 600px) {
+    .card h2{
+        font-size: 1rem;
     }
 }
 
