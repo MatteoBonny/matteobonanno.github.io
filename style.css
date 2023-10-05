@@ -136,15 +136,6 @@ body {
     transform: rotate(-90deg);
 }
 
-@media only screen and (max-width: 600px) {
-    .card h2{
-        font-size: 1rem;
-    }
-    .top a{
-        font-size: 2rem;
-    }
-}
-
 .logo {
     width: 5vh;
     height: 5vh;
@@ -201,4 +192,26 @@ transition: transform 0.25s ease-out;
 transform: scaleX(1);
 transform-origin: bottom left;
 }
-  
+
+@media only screen and (max-width: 600px) {
+    .card {
+        height: 10vh;
+        width: 17vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .card h2 {
+        font-size: 1rem;
+    }
+    
+    .top a {
+        font-size: 4rem;
+    }
+    .nav-link {
+        font-size: 14px; 
+    }
+}
