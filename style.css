@@ -41,7 +41,7 @@ body {
 .card:hover {
     transform: scale(0.91);
     color: #ff0000;
-    cursor: url("img/Melanzana.png"), auto;
+    cursor: url("Melanzana\ 18.50.17.png"), auto;
 }
 
 .card:before {
