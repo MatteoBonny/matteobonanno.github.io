@@ -205,7 +205,7 @@ transform-origin: bottom left;
     }
     
     .card h2 {
-        font-size: 1rem;
+        font-size: 0.5rem;
     }
     
     .top a {
@@ -214,4 +214,19 @@ transform-origin: bottom left;
     .nav-link {
         font-size: 14px; 
     }
+
+    .container {
+        width: 100%;
+        max-width: 100%;
+       
+    }
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    /* Altri stili... */
+}
+.overflow-hidden-container {
+    overflow-x: hidden;
 }
