@@ -3,12 +3,14 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: column; /* Aggiunto per consentire il posizionamento verticale */
+    flex-direction: column;
     align-items: center;
     height: 100vh;
     cursor: url("point.png"), auto;
-    /* background-image: url("BG.png"); */
 }
+
+
+
 @font-face {
     font-family: 'AndersonGrotesk';
     src: url('font/AndersonGrotesk-Black.otf') format('opentype'); 
@@ -148,10 +150,12 @@ body {
     z-index: 1;
     transform: rotate(90deg);
     transition: transform 0.3s ease-in-out;
+    cursor: url("point.png"), auto;
 }
 
 .logo:hover {
     transform: scale(1.2) rotate(90deg);
+    cursor: url("point.png"), auto;
 }
 
 
@@ -168,6 +172,8 @@ body {
 
 #ora{
     color: red;
+    cursor: url("point.png"), auto;
+
 }
 
 #top {
@@ -220,4 +226,21 @@ body {
         font-size: 0.6rem; 
     }
 }
+
+
+.cv {
+    height: 50vh; /* Utilizza l'intera altezza della viewport */
+    width: 40vw; /* Utilizza l'intera larghezza della viewport */
+}
+
+
+
+
+
+
+
+
+
+
+
 

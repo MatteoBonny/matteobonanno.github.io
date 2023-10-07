@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    cursor: url("point.png"), auto;
+}
+
+.logo {
+    width: 5vh;
+    height: 5vh;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transform: rotate(90deg);
+    transition: transform 0.3s ease-in-out;
+    cursor: url("point.png"), auto;
+}
+
+.logo:hover {
+    transform: scale(1.2) rotate(90deg);
+    cursor: url("point.png"), auto;
+}
+
+
+.custom-navbar {
+    background-color: white;
+    padding-left: 70px;
+    position: fixed;
+    width: 100%;
+    height: 7vh;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 0.5px solid rgb(0, 0, 0);
+}
+
+#ora{
+    color: red;
+    cursor: url("point.png"), auto;
+}
+
+#top {
+    display: inline-block;
+    position: relative;
+    color: #0087ca;
+  }
+  
+#top:after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 5px;
+    left: 25%; 
+    background-color: #ffcc00;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+#top:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+@media only screen and (max-width: 600px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .top a {
+        font-size: 4rem;
+    }
+    .nav-link {
+        font-size: 0.6rem; 
+    }
+}
+
+
+.cv {
+    height: 50vh; /* Utilizza l'intera altezza della viewport */
+    width: 40vw; /* Utilizza l'intera larghezza della viewport */
+}
+
+#title {
+    font-size: 8vh;
+    font-weight: bold;
+    color: #ffcc00;
+    margin: 0;
+    padding: 0;
+    font-family: 'AndersonGrotesk';
+}
+
+#title::selection {
+    background-color: transparent; 
+    color: rgb(255, 157, 0); 
+}
+
+
+#paragrafo {
+    font-size: 2.5vh;
+    color: #000000;
+    margin: 0;
+    padding-bottom: 5vh;
+    text-align: left;
+    font-family: 'Prompt-Regular';
+
+}
+
+#paragrafo::selection {
+    background-color: transparent; 
+    color: rgb(255, 0, 0); 
+}
+
+
+.memoji {
+    height: 30vh;
+    width: 30vh;
+    transform-origin: center;
+    transition: transform 0.5s ease-out;
+    background-size: cover;
+    background-position: center;
+}
+
+.memoji:hover {
+    transform: scale(1.2); /* Modificato il fattore di scala per ottenere un effetto di zoom più evidente */
+}
+
+@media only screen and (max-width: 770px) {
+    .row {
+        flex-direction: row; /* Modificato da column-reverse a row */
+        align-items: center;
+        justify-content: center; /* Centra i contenuti lungo l'asse orizzontale */
+        text-align: center; /* Centra il testo */
+    }
+
+    .col-md-7, .col-md-5 {
+        width: 50%; /* Imposta la larghezza al 50% per entrambi per avere il 50% dello spazio l'uno accanto all'altro */
+    }
+
+    .memoji {
+        width: 15vh;
+        height: 15vh;
+        margin: 0; 
+        margin-bottom: 2vh;
+    }
+
+    #paragrafo {
+        font-size: 1vh;
+        margin: 0; /* Rimuovi il margine per evitare spazi inutili */
+    }
+}
