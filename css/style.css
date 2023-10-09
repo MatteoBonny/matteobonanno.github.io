@@ -174,7 +174,6 @@ body {
     cursor: url("../images/point.png"), auto;
 
 }
-
 #top {
     display: inline-block;
     position: relative;
@@ -204,7 +203,6 @@ body {
     body {
         overflow-x: hidden;
     }
-    
     .card {
         height: 7vh;
         width: 13vh;
@@ -214,16 +212,14 @@ body {
         align-items: center;
         text-align: center;
     }
-    
     .card h2 {
         font-size: 0.6rem;
     }
-    
     .top a {
         font-size: 4rem;
     }
     .nav-link {
-        font-size: 0.6rem; 
+        font-size: 0.9rem; 
     }
 }
 
