@@ -1,3 +1,12 @@
+const scroll = new LocomotiveScroll({
+    el: document.querySelector("[data-scroll-container]"),
+    smooth: true,
+    smartphone:{
+        horizontalGesture:false
+    }
+});
+
+
 
 
 // var cardWork = document.getElementById("work1");
@@ -7,6 +16,7 @@
     
 // });
 
+  
 
 
 function aggiornaOra() {
@@ -15,11 +25,13 @@ function aggiornaOra() {
     let ora = dataAttuale.getHours();
     let minuti = dataAttuale.getMinutes();
     minuti = minuti < 10 ? '0' + minuti : minuti;
-    let oraFormattata = "Bonny IT " + ora + ':' + minuti;
+    let oraFormattata = "IT " + ora + ':' + minuti;
     elementoOra.textContent = oraFormattata;
+    console.log("gggg");
 }
+
 aggiornaOra();
-setInterval(aggiornaOra, 60000);
+setInterval(aggiornaOra, 1000);
 
 
 

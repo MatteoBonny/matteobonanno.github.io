@@ -5,8 +5,21 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
     cursor: url("point.png"), auto;
+}
+@font-face {
+    font-family: 'AndersonGrotesk';
+    src: url('font/AndersonGrotesk-Black.otf') format('opentype'); 
+}
+
+@font-face {
+    font-family: 'Prompt-Regular';
+    src: url('font/Prompt-Regular.ttf') format('opentype'); 
+}
+
+@font-face {
+    font-family: 'outward-block';
+    src: url('font/outward-block.ttf') format('opentype'); 
 }
 
 .logo {
@@ -108,7 +121,7 @@ body {
     font-size: 2.5vh;
     color: #000000;
     margin: 0;
-    padding-bottom: 5vh;
+    /* padding-bottom: 5vh; */
     text-align: left;
     font-family: 'Prompt-Regular';
 
@@ -121,16 +134,14 @@ body {
 
 
 .memoji {
-    height: 30vh;
-    width: 30vh;
-    transform-origin: center;
+    height: 25vh;
+    width: 25vh;
     transition: transform 0.5s ease-out;
-    background-size: cover;
-    background-position: center;
+
 }
 
 .memoji:hover {
-    transform: scale(1.2); /* Modificato il fattore di scala per ottenere un effetto di zoom più evidente */
+    transform: scale(1.2)!important; 
 }
 
 @media only screen and (max-width: 770px) {
@@ -149,7 +160,6 @@ body {
         width: 15vh;
         height: 15vh;
         margin: 0; 
-        margin-bottom: 2vh;
     }
 
     #paragrafo {

@@ -5,25 +5,24 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
-    cursor: url("point.png"), auto;
+    cursor: url("../images/point.png"), auto;
 }
 
 
 
 @font-face {
     font-family: 'AndersonGrotesk';
-    src: url('font/AndersonGrotesk-Black.otf') format('opentype'); 
+    src: url('../font/AndersonGrotesk-Black.otf') format('opentype'); 
 }
 
 @font-face {
     font-family: 'Prompt-Regular';
-    src: url('font/Prompt-Regular.ttf') format('opentype'); 
+    src: url('../font/Prompt-Regular.ttf') format('opentype'); 
 }
 
 @font-face {
     font-family: 'outward-block';
-    src: url('font/outward-block.ttf') format('opentype'); 
+    src: url('../font/outward-block.ttf') format('opentype'); 
 }
 
 .card {
@@ -44,7 +43,7 @@ body {
 .card:hover {
     transform: scale(0.91);
     color: #ff0000;
-    cursor: url("Melanzana\ 18.50.17.png"), auto;
+    cursor: url("../images/Melanzana\ 18.50.17.png"), auto;
 }
 
 .card:before {
@@ -118,7 +117,7 @@ body {
     color: #000000;
     margin: 0;
     padding-bottom: 5vh;
-    text-align: center;
+    /* text-align: center; */
     font-family: 'Prompt-Regular';
 }
 #paragrafo::selection {
@@ -150,12 +149,12 @@ body {
     z-index: 1;
     transform: rotate(90deg);
     transition: transform 0.3s ease-in-out;
-    cursor: url("point.png"), auto;
+    cursor: url("../images/point.png"), auto;
 }
 
 .logo:hover {
     transform: scale(1.2) rotate(90deg);
-    cursor: url("point.png"), auto;
+    cursor: url("../images/point.png"), auto;
 }
 
 
@@ -172,7 +171,7 @@ body {
 
 #ora{
     color: red;
-    cursor: url("point.png"), auto;
+    cursor: url("../images/point.png"), auto;
 
 }
 
@@ -205,6 +204,7 @@ body {
     body {
         overflow-x: hidden;
     }
+    
     .card {
         height: 7vh;
         width: 13vh;
@@ -233,6 +233,16 @@ body {
     width: 40vw; /* Utilizza l'intera larghezza della viewport */
 }
 
+.memoji {
+    height: 25vh;
+    width: 25vh;
+    transition: transform 0.5s ease-out;
+
+}
+
+.memoji:hover {
+    transform: scale(1.2)!important; 
+}
 
 
 
