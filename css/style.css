@@ -9,7 +9,6 @@ body {
 }
 
 
-
 @font-face {
     font-family: 'AndersonGrotesk';
     src: url('../font/AndersonGrotesk-Black.otf') format('opentype'); 
@@ -96,6 +95,7 @@ body {
     50% { background-position: 400% 0; }
     100% { background-position: 0 0; }
 }
+
 #title {
     font-size: 8vh;
     font-weight: bold;
@@ -106,7 +106,6 @@ body {
     font-family: 'AndersonGrotesk';
     padding-bottom: 10vh;
 }
-
 #title::selection {
     background-color: transparent; 
     color: rgb(255, 157, 0); 
@@ -125,7 +124,6 @@ body {
     color: rgb(255, 0, 0); 
 }
 
-
 .arrow {
     width: 2vh;
     height: 2vh;
@@ -133,7 +131,6 @@ body {
     transform: rotate(90deg);
     transition: transform 0.3s ease-in-out; /* Aggiungi una transizione per un effetto più fluido */
 }
-
 .card:hover .arrow {
     transform: rotate(-90deg);
 }
@@ -167,19 +164,22 @@ body {
     top: 0;
     z-index: 1000;
     border-bottom: 0.5px solid rgb(0, 0, 0);
+    cursor: url("../images/point.png"), auto;
 }
+
 
 #ora{
     color: red;
     cursor: url("../images/point.png"), auto;
 
 }
+
 #top {
     display: inline-block;
     position: relative;
-    color: #0087ca;
+    color: #000000;
+    /* color: #0087ca; */
   }
-  
 #top:after {
     content: '';
     position: absolute;
@@ -190,12 +190,15 @@ body {
     left: 25%; 
     background-color: #ffcc00;
     transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-}
+    transition: transform 0.25s ease-out;    
 
+}
 #top:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
+}
+#top:hover {
+    cursor: url("../images/point.png"), auto;
 }
 
 

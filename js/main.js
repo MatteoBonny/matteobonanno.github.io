@@ -4,6 +4,7 @@ const scroll = new LocomotiveScroll({
     smartphone:{
         horizontalGesture:false
     }
+    
 });
 
 
@@ -47,7 +48,5 @@ setInterval(aggiornaOra, 1000);
 //         img_cv.style.transform = "translateY(" + -1 * translateY + "px)";
 //     }
 // });
-
-
 
 
