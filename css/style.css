@@ -149,6 +149,9 @@ body{
         padding-top: 35vh;
         font-size: 1vh;
     }
+    #rowTot{
+        margin-bottom: 7vh;
+    }
    
 }
 
