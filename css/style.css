@@ -134,7 +134,7 @@ body{
 @media (max-width: 767px) {
     #title{
         font-size: 10vh;
-        padding-top: 20vh;
+        padding-top: 16vh;
         align-items: center;
         padding-left: 0vh;
     }
@@ -150,7 +150,7 @@ body{
         font-size: 1vh;
     }
     #rowTot{
-        margin-bottom: 7vh;
+        margin-bottom: 10vh;
     }
    
 }
