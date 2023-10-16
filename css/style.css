@@ -22,29 +22,7 @@ body{
         transform: translate(0,0);
     }
 }
-@media (max-width: 767px) {
-    #title{
-        font-size: 10vh;
-        padding-top: 16vh;
-        align-items: center;
-        padding-left: 0vh;
-    }
-    #subtitle{
-       font-size: 1.3vh;
-    }
-    #cd{
-        font-size: 2vh;
-        padding-left: 3vh;
-        padding-top: 7.5vh;
-    }
-    #description{
-        font-size: 1vh;
-    }
-    #rowTot{
-        margin-bottom: 7vh;
-    }
-   
-}
+
 
 .container {
     display: flex;
@@ -69,7 +47,7 @@ body{
     justify-content: center; 
     font-family: "monument-bold";
     overflow: hidden;
-    line-height: 0.9;
+    line-height: 1;
     position: relative;
     /* left: -2.9%;  */
    
@@ -178,6 +156,30 @@ body{
 .ulAnR:hover::after {
     transform: scaleX(1); 
     transform-origin: bottom left; 
+}
+
+@media (max-width: 767px) {
+    #title{
+        font-size: 10vh;
+        padding-top: 16vh;
+        align-items: center;
+        padding-left: 0vh;
+    }
+    #subtitle{
+       font-size: 1.3vh;
+    }
+    #cd{
+        font-size: 2vh;
+        padding-left: 3vh;
+        padding-top: 7.5vh;
+    }
+    #description{
+        font-size: 1vh;
+    }
+    #rowTot{
+        margin-bottom: 7vh;
+    }
+   
 }
 
 
