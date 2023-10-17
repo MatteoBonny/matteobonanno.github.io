@@ -2,9 +2,14 @@ body{
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #F5F0E6;
+    /* background-color: #F5F0E6; */
+    background-color: #000;
     margin: 0;
-    cursor: url(../img/cursor.png), auto;
+    cursor: url(../img/cursor-white.png), auto;
+}
+body ::selection{
+    background-color: #4B09F5; 
+    color: white; 
 }
 @font-face {
     font-family: 'Monument-bold';
@@ -23,6 +28,12 @@ body{
     }
 }
 
+.italic{
+    font-style: italic;
+}
+.maR{
+    padding-right: 1px;
+}
 
 .container {
     display: flex;
@@ -35,8 +46,8 @@ body{
     height: 7vh;
     top: 0;
     z-index: 999;
-    background-color: #F5F0E6;
-    cursor: url(../img/cursor.png), auto;
+    background-color: #000;
+    cursor: url(../img/cursor-white.png), auto;
 
 }
 
@@ -50,6 +61,7 @@ body{
     line-height: 1;
     position: relative;
     /* left: -2.9%;  */
+    color: white;
    
 }
 #cd span {
@@ -68,7 +80,9 @@ body{
     position: relative;
     font-size: 2vh;
     padding-top: 5vh;
+    color: white;
 }
+
 #description span {
     display: block;
     animation: boh 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.0s;   
@@ -77,21 +91,21 @@ body{
 #mail {
     font-family: "monument";
     font-size: 1.2vh;
-    color: #000;
+    color: #ffffff;
     text-decoration: none;
-    cursor: url(../img/cursor.png), auto;
+    cursor: url(../img/cursor-white.png), auto;
 }
 #mail:hover {
-    cursor: url(../img/cursor.png), auto;
+    cursor: url(../img/cursor-white.png), auto;
 }
 
 .nav-link{
-    cursor: url(../img/cursor.png), auto;
+    cursor: url(../img/cursor-white.png), auto;
 }
 #nv-cl {
     display: inline-block;
     position: relative;
-    color: #000000;
+    color: #ffffff;
 }
 
 #title {
@@ -105,6 +119,7 @@ body{
     overflow: hidden;
     line-height: 1.2;
     position: relative;
+    color: white;
 }
 #title span {
     display: block;
@@ -112,8 +127,8 @@ body{
     
 }
 #title ::selection {
-    background-color: transparent; 
-    color: #8a88828e; 
+    background-color: #4B09F5; 
+    color: white; 
 }
 
 .ulAn{
@@ -127,7 +142,7 @@ body{
     height: 1px;
     bottom: 0px;
     left: 0;
-    background-color: #000;
+    background-color: white;
     transform: scaleX(1); 
     transform-origin: bottom right; 
     transition: transform 0.25s ease-out; 
@@ -147,7 +162,7 @@ body{
     height: 1px;
     bottom: 0px;
     left: 0;
-    background-color: #000;
+    background-color: white;
     transform: scaleX(0); 
     transform-origin: bottom right; 
     transition: transform 0.25s ease-out; 
