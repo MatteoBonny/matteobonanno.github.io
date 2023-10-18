@@ -20,13 +20,28 @@ body ::selection{
     src: url('../Font/Monument\ Grotesk-normal-400-100.ttf') format('opentype'); 
 }
 @keyframes boh {
-    0% {
+    /* 0% {
         transform: translate(0,100%);
     }
     100% {
         transform: translate(0,0);
+    } */
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
     }
 }
+
+/* @keyframes boh-title {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+} */
 
 .italic{
     font-style: italic;
@@ -66,8 +81,7 @@ body ::selection{
 }
 #cd span {
     display: block;
-    animation: boh 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.0s;
-}
+    animation: boh 1.5s ease-out 0s;}
 
 #description{
     display: flex; 
@@ -85,26 +99,46 @@ body ::selection{
 
 #description span {
     display: block;
-    animation: boh 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.0s;   
+    animation: boh 1.5s ease-out 0s;
 }
 
-#ipsilon{
+#ipsilon {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: flex-end;
+    font-family: "monument";
+    overflow: hidden;
+    position: relative;
+    font-size: 2vh;
+    color: white;
+    margin-bottom: 17vh;
+}
+
+#ipsilon span {
+    display: block; 
+    animation: boh 1.5s ease-out 0s;
+}
+
+#mail {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: flex-end;
     font-family: "monument";
     overflow: hidden;
     line-height: 1.1;
     position: relative;
-    font-size: 2vh;
-    padding-top: 5vh;
-    color: white;
-}
-
-#mail {
-    font-family: "monument";
     font-size: 1.2vh;
     color: #ffffff;
     text-decoration: none;
     cursor: url(../img/cursor-white.png), auto;
 }
+#mail span{
+    display: block;
+    animation: boh 1.5s ease-out 0s;
+}
+
 #mail:hover {
     cursor: url(../img/cursor-white.png), auto;
 }
@@ -133,7 +167,8 @@ body ::selection{
 }
 #title span {
     display: block;
-    animation: boh 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.0s;
+    /* animation: boh 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.0s; */
+    animation: boh 1.6s ease-out 0s;
     
 }
 #title ::selection {
@@ -144,6 +179,7 @@ body ::selection{
 .ulAn{
     position: relative;
     width: fit-content;
+    display: block;
 }
 .ulAn::after {
     content: "";
@@ -156,14 +192,13 @@ body ::selection{
     transform: scaleX(1); 
     transform-origin: bottom right; 
     transition: transform 0.25s ease-out; 
-}
+}   
 .ulAn:hover::after {
     transform: scaleX(0); 
     transform-origin: bottom left; 
 }
 .ulAnR{
     position: relative;
-
 }
 .ulAnR::after {
     content: "";
@@ -212,7 +247,7 @@ body ::selection{
         font-size: 1vh;
         padding-top: 2vh;
         line-height: 1;
-        padding-left: 31vh;
+        padding-right: 3.8vh;
     }
    
 }
