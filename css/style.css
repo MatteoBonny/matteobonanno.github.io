@@ -88,6 +88,16 @@ body ::selection{
     animation: boh 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.0s;   
 }
 
+#ipsilon{
+    font-family: "monument";
+    overflow: hidden;
+    line-height: 1.1;
+    position: relative;
+    font-size: 2vh;
+    padding-top: 5vh;
+    color: white;
+}
+
 #mail {
     font-family: "monument";
     font-size: 1.2vh;
@@ -187,13 +197,22 @@ body ::selection{
         font-size: 2vh;
         padding-left: 3vh;
         padding-top: 7.5vh;
+        line-height: 1;
     }
     #description{
         font-size: 1vh;
         padding-top: 8vh;
+        line-height: 1;
+
     }
     #rowTot{
         margin-bottom: 7vh;
+    }
+    #ipsilon{
+        font-size: 1vh;
+        padding-top: 8vh;
+        line-height: 1;
+        padding-left: 31vh;
     }
    
 }
