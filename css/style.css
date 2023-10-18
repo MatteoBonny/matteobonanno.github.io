@@ -42,6 +42,29 @@ body ::selection{
         transform: translateY(0);
     }
 } */
+/* @keyframes float {
+    0% {
+      transform: translate(-10px, -10px);
+    }
+    100% {
+      transform: translate(10px, 10px);
+    }
+  }
+   */
+   
+@keyframes float {
+0% {
+    transform: translate(0px, -20px);
+    /* transform: translate(-10px, -10px); */
+}
+100% {
+    transform: translate(0px, 20px);
+}
+    /* transform: translate(10px, 10px); */
+}
+
+  
+
 
 .italic{
     font-style: italic;
@@ -219,6 +242,92 @@ body ::selection{
     transform: scaleX(1); 
     transform-origin: bottom left; 
 }
+
+
+
+
+
+/* .arrow{
+    width: 30px;
+    filter: invert(1);
+
+}
+
+#imgeffect{
+    position: absolute;
+    left: -180px;
+    top: -50px;
+    border-radius: 5px;
+    border: 0.7px solid white;
+
+    
+}
+.worksItem{
+    color:white;
+    font-size: 2.5vh;
+    font-style: "monument";
+    text-decoration: none;
+
+}
+.works img {
+    opacity: 0;
+    max-width: 100px;
+    margin-right: 10px;
+    transform: translate(-10px, -10px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.works:hover img {
+    opacity: 1;
+    transform: translate(10px, -10px);
+    animation: float 1.5s infinite alternate ease-in-out;
+} */
+
+.arrow {
+    width: 12px;
+    height: 12px; 
+    margin-right: 5px; 
+    filter: invert(1);
+    transform: rotate(0deg);
+    transition: transform 0.5s ease;
+}
+  
+.worksItem:hover .arrow {
+    transform: rotate(-135deg);
+}
+  
+.imgeffect {
+    position: absolute;
+    left: -180px;
+    top: -50px;
+    border-radius: 5px;
+    border: 0.7px solid white;
+    opacity: 0;
+    max-width: 100px;
+    transform: translate(-10px, -10px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+  
+.worksItem:hover .imgeffect {
+    opacity: 1;
+    transform: translate(10px, -10px);
+    animation: float 1.5s infinite alternate ease-in-out;
+}
+  
+.worksItem {
+    color: white;
+    font-size: 2.5vh;
+    font-style: "monument";
+    text-decoration: none;
+    display: flex; /* Abilita il layout flessibile */
+    align-items: center; /* Allinea verticalmente */
+    position: relative;
+}
+  
+
+  
+
+
 
 @media (max-width: 767px) {
     #title{
