@@ -4,5 +4,5 @@ const scroll = new LocomotiveScroll({
     smartphone:{
         horizontalGesture:false
     }
-    
 });
+

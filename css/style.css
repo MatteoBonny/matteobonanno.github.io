@@ -284,14 +284,14 @@ body ::selection{
 } */
 
 .arrow {
-    width: 12px;
-    height: 12px; 
+    width: 10px;
+    height: 10px; 
+    margin-right: 5px; 
     margin-right: 5px; 
     filter: invert(1);
     transform: rotate(0deg);
     transition: transform 0.5s ease;
 }
-  
 .worksItem:hover .arrow {
     transform: rotate(-135deg);
 }
@@ -304,14 +304,14 @@ body ::selection{
     border: 0.7px solid white;
     opacity: 0;
     max-width: 100px;
-    transform: translate(-10px, -10px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
+    transform: translate(-100vh, -20px); /*mette le immagini all'inizio fuori*/
+    transition: opacity 0.3s ease, transform 0.5s ease;
 }
   
 .worksItem:hover .imgeffect {
     opacity: 1;
     transform: translate(10px, -10px);
-    animation: float 1.5s infinite alternate ease-in-out;
+    animation: float 2s infinite alternate ease-in-out;
 }
   
 .worksItem {
@@ -322,6 +322,22 @@ body ::selection{
     display: flex; /* Abilita il layout flessibile */
     align-items: center; /* Allinea verticalmente */
     position: relative;
+}
+
+#projects{
+    color: #4B09F5;
+    font-size: 1.5vh;
+    font-style: "monument";
+    padding-top: 5vh;
+    padding-left: 10vh;
+
+}
+#projects::selection{
+    color: rgb(255, 255, 255);
+}
+
+.space{
+    padding-top: 30vh;
 }
   
 
