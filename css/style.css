@@ -1,11 +1,11 @@
-body{
+body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    /* background-color: #F5F0E6; */
-    background-color: #000;
-    margin: 0;
+    background-color: #000; /* Cambiato il colore di sfondo */
     cursor: url(../img/cursor-white.png), auto;
+    max-width: 100%; 
+    overflow-x: hidden; /* Nasconde lo scroll orizzontale */
 }
 body ::selection{
     background-color: #4B09F5; 
@@ -33,25 +33,7 @@ body ::selection{
         transform: translateY(0);
     }
 }
-
-/* @keyframes boh-title {
-    0% {
-        transform: translateY(-100%);
-    }
-    100% {
-        transform: translateY(0);
-    }
-} */
-/* @keyframes float {
-    0% {
-      transform: translate(-10px, -10px);
-    }
-    100% {
-      transform: translate(10px, 10px);
-    }
-  }
-   */
-   
+  
 @keyframes float {
 0% {
     transform: translate(0px, -20px);
@@ -77,6 +59,7 @@ body ::selection{
     display: flex;
     flex-direction: column;
     justify-content: center;
+ 
 }
 .custom-navbar {
     position: fixed;
@@ -89,7 +72,7 @@ body ::selection{
 
 }
 
-#cd{
+.cd{
     font-size: 4vh;
     display: flex; 
     flex-direction: column; 
@@ -102,7 +85,7 @@ body ::selection{
     color: white;
    
 }
-#cd span {
+.cd span {
     display: block;
     animation: boh 1.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.0s;
 }
@@ -337,16 +320,28 @@ body ::selection{
 }
 
 .space{
-    padding-top: 30vh;
+    padding-top: 10vh;
 }
-  
 
+.works{
+    opacity:1;
+}
+.sticky-navbar {
+    position: sticky;
+    top: 0;
+    background-color: #000; /* Cambia il colore di sfondo desiderato */
+    z-index: 100; /* Imposta un indice Z elevato per posizionare sopra gli altri elementi */
+  }
   
 
 
 
 @media (max-width: 767px) {
-    #title{
+    body {
+        max-width: 100%; 
+        padding: 5px
+    }
+    #title {
         font-size: 13vh;
         padding-top: 16vh;
         align-items: center;
@@ -355,7 +350,7 @@ body ::selection{
     #subtitle{
        font-size: 1.3vh;
     }
-    #cd{
+    .cd{
         font-size: 2vh;
         padding-left: 3vh;
         padding-top: 7.5vh;
@@ -363,8 +358,8 @@ body ::selection{
     }
     #description{
         font-size: 1vh;
-        padding-top: 8vh;
         line-height: 1;
+        padding: 0;
 
     }
     #rowTot{
