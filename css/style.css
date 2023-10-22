@@ -51,8 +51,15 @@ body ::selection{
 .italic{
     font-style: italic;
 }
-.maR{
-    padding-right: 1px;
+
+.arrow {
+    width: 10px;
+    height: 10px; 
+    margin-right: 5px; 
+    margin-right: 5px; 
+    filter: invert(1);
+    transform: rotate(0deg);
+    transition: transform 0.5s ease;
 }
 
 .container {
@@ -149,6 +156,9 @@ body ::selection{
 #mail:hover {
     cursor: url(../img/cursor-white.png), auto;
 }
+.marginR{
+    padding-right: 1px;
+}
 
 .nav-link{
     cursor: url(../img/cursor-white.png), auto;
@@ -226,55 +236,6 @@ body ::selection{
     transform-origin: bottom left; 
 }
 
-
-
-
-
-/* .arrow{
-    width: 30px;
-    filter: invert(1);
-
-}
-
-#imgeffect{
-    position: absolute;
-    left: -180px;
-    top: -50px;
-    border-radius: 5px;
-    border: 0.7px solid white;
-
-    
-}
-.worksItem{
-    color:white;
-    font-size: 2.5vh;
-    font-style: "monument";
-    text-decoration: none;
-
-}
-.works img {
-    opacity: 0;
-    max-width: 100px;
-    margin-right: 10px;
-    transform: translate(-10px, -10px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-.works:hover img {
-    opacity: 1;
-    transform: translate(10px, -10px);
-    animation: float 1.5s infinite alternate ease-in-out;
-} */
-
-.arrow {
-    width: 10px;
-    height: 10px; 
-    margin-right: 5px; 
-    margin-right: 5px; 
-    filter: invert(1);
-    transform: rotate(0deg);
-    transition: transform 0.5s ease;
-}
 .worksItem:hover .arrow {
     transform: rotate(-135deg);
 }
@@ -286,17 +247,21 @@ body ::selection{
     border-radius: 5px;
     border: 0.7px solid white;
     opacity: 0;
-    max-width: 100px;
+    /* max-width: 100px; */
     transform: translate(-100vh, -20px); /*mette le immagini all'inizio fuori*/
     transition: opacity 0.3s ease, transform 0.5s ease;
+    /* margin-top: 50vh; */
+
 }
-  
+
+.works{
+    opacity:1;
+} 
 .worksItem:hover .imgeffect {
     opacity: 1;
     transform: translate(10px, -10px);
     animation: float 2s infinite alternate ease-in-out;
-}
-  
+} 
 .worksItem {
     color: white;
     font-size: 2.5vh;
@@ -305,6 +270,7 @@ body ::selection{
     display: flex; /* Abilita il layout flessibile */
     align-items: center; /* Allinea verticalmente */
     position: relative;
+    cursor: url(../img/cursor-white.png), auto;
 }
 
 #projects{
@@ -322,10 +288,6 @@ body ::selection{
 .space{
     padding-top: 10vh;
 }
-
-.works{
-    opacity:1;
-}
 .sticky-navbar {
     position: sticky;
     top: 0;
@@ -333,7 +295,6 @@ body ::selection{
     z-index: 100; /* Imposta un indice Z elevato per posizionare sopra gli altri elementi */
   }
   
-
 
 
 @media (max-width: 767px) {
