@@ -293,8 +293,8 @@ body ::selection{
     top: 0;
     background-color: #000; /* Cambia il colore di sfondo desiderato */
     z-index: 100; /* Imposta un indice Z elevato per posizionare sopra gli altri elementi */
-  }
-  
+}
+
 
 
 @media (max-width: 767px) {

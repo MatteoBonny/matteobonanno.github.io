@@ -62,55 +62,72 @@ if (window.innerWidth > 767) {
   // Non includere GSAP e/o disabilita le animazioni per la versione mobile
 }
 
+// console.log(window.location.pathname);
 
+// if (window.location.pathname === "/" || window.location.pathname === "/index.html") {
+//   console.log("Sono nella pagina index.html");
+// } else if (window.location.pathname === "/works.html") {
+//   console.log("Sono nella pagina works.html");
+// }
+
+if (window.location.pathname === "/" || window.location.pathname === "/index.html") {
+  
 // worksData
-const worksData = [
-  {
-    text: "Creative Curriculum",
-    imgSrc: "img/Works/CreativeCurriculmBonny.png",
-    alt: "Creative Curriculum",
-  },
-  {
-    text: "Business Card",
-    imgSrc: "img/Works/buisness card.png",
-    alt: "Business Card",
-  },
-  {
-    text: "La Bottega di Iaia",
-    imgSrc: "img/Works/LaBottega.png",
-    alt: "La Bottega di Iaia",
-  },
-  {
-    text: "Villa Reale",
-    imgSrc: "img/Works/Villa.png",
-    alt: "Villa Reale",
-  },
-  {
-    text: "BSP-Polymers",
-    imgSrc: "img/Works/BSP-POLYMERS.png",
-    alt: "BSP-Polymers",
-  },
-];
-const worksContainer = document.getElementById("worksContainer");
-worksData.forEach((work) => {
-  const workItem = document.createElement("a");
-  workItem.classList.add("worksItem");
+  const worksData = [
+    {
+      text: "Creative Curriculum",
+      imgSrc: "img/Works/CreativeCurriculmBonny.png",
+      alt: "Creative Curriculum",
+    },
+    {
+      text: "Business Card",
+      imgSrc: "img/Works/buisness card.png",
+      alt: "Business Card",
+    },
+    {
+      text: "La Bottega di Iaia",
+      imgSrc: "img/Works/LaBottega.png",
+      alt: "La Bottega di Iaia",
+    },
+    {
+      text: "Villa Reale",
+      imgSrc: "img/Works/Villa.png",
+      alt: "Villa Reale",
+    },
+    {
+      text: "BSP-Polymers",
+      imgSrc: "img/Works/BSP-POLYMERS.png",
+      alt: "BSP-Polymers",
+    },
+  ];
 
-  const arrowImage = document.createElement("img");
-  arrowImage.classList.add("arrow");
-  arrowImage.src = "img/arrow.png";
 
-  const workImage = document.createElement("img");
-  workImage.classList.add("imgeffect");
-  workImage.src = work.imgSrc;
-  workImage.alt = work.alt;
-  workImage.style.width = "100px";
-  workImage.style.height = "auto";
-  workImage.style.marginTop = "3vh";
+  const worksContainer = document.getElementById("worksContainer");
+  worksData.forEach((work) => {
+    const workItem = document.createElement("div");
+    workItem.classList.add("worksItem");
 
-  workItem.appendChild(arrowImage);
-  workItem.appendChild(document.createTextNode(work.text));
-  workItem.appendChild(workImage);
+    workItem.addEventListener("click", () => {
+      // Imposta l'URL della pagina "works.html" con un parametro "workIndex" per identificare il lavoro
+      window.location.href = `html/works.html`;
+    });
 
-  worksContainer.appendChild(workItem);
-});
+    const arrowImage = document.createElement("img");
+    arrowImage.classList.add("arrow");
+    arrowImage.src = "img/arrow.png";
+
+    const workImage = document.createElement("img");
+    workImage.classList.add("imgeffect");
+    workImage.src = work.imgSrc;
+    workImage.alt = work.alt;
+    workImage.style.width = "100px";
+    workImage.style.height = "auto";
+    workImage.style.marginTop = "3vh";
+
+    workItem.appendChild(arrowImage);
+    workItem.appendChild(document.createTextNode(work.text));
+    workItem.appendChild(workImage);
+
+    worksContainer.appendChild(workItem);
+  });
+}
