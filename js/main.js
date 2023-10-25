@@ -69,7 +69,7 @@ if (window.innerWidth > 767) {
         trigger: trigger,
         start: start,
         end: end,
-        markers: true,
+        markers: false,
         scrub: true,
       },
     });
