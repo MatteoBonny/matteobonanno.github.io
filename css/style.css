@@ -294,6 +294,14 @@ body ::selection{
     background-color: #000; /* Cambia il colore di sfondo desiderato */
     z-index: 100; /* Imposta un indice Z elevato per posizionare sopra gli altri elementi */
 }
+.logo {
+    transition: transform 0.3s ease-in-out;
+    padding-left: 3vh; 
+}
+  
+.logo:hover {
+    transform: scale(1.2);
+}
 
 
 

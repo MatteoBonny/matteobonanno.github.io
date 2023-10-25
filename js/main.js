@@ -2,62 +2,90 @@
 if (window.innerWidth > 767) {
   gsap.registerPlugin(ScrollTrigger);
 
-  function createScrollAnimationFrom(
-    trigger,
-    start,
-    end,
-    x,
-    y,
-    rotate,
-    dura,
-    op
-  ) {
+  gsap.from(".creative", {
+    x: 0,
+    y: 200,
+    duration: 2,
+    ease: "power2.out",
+  });
+  gsap.from(".sub", {
+    x: 0,
+    y: 200,
+    duration: 2,
+    ease: "power2.out",
+  });
+  gsap.from("#title", {
+    x: 0,
+    y: -500,
+    duration: 2,
+    ease: "power2.out",
+  });
+  gsap.from("#ipsilon", {
+    x: 0,
+    y: -500,
+    duration: 2,
+    ease: "power2.out",
+  });
+
+
+
+
+  // function createScrollAnimationFrom(
+  //   trigger,
+  //   start,
+  //   end,
+  //   x,
+  //   y,
+  //   rotate,
+  //   dura,
+  //   op
+  // ) {
+  //   const animation = gsap.timeline({
+  //     scrollTrigger: {
+  //       trigger: trigger,
+  //       start: start,
+  //       end: end,
+  //       markers: false,
+  //       scrub: true,
+  //     },
+  //   });
+
+  //   animation.from(trigger, {
+  //     x: x,
+  //     y: y,
+  //     rotate: rotate,
+  //     duration: dura,
+  //     opacity: op,
+  //     ease: "power2.out",
+  //   });
+  // }
+
+  // createScrollAnimationFrom("#projects","top 100%","bottom 55%",-2000,0,-180,0.2,-5);
+  // createScrollAnimationFrom(".works","top 80%","bottom 50%",1000,0,180,5,-1);
+
+  function createScrollAnimationTo(trigger, start, end, op) {
     const animation = gsap.timeline({
       scrollTrigger: {
         trigger: trigger,
         start: start,
         end: end,
-        markers: false,
-        scrub: true,
-      },
-    });
-
-    animation.from(trigger, {
-      x: x,
-      y: y,
-      rotate: rotate,
-      duration: dura,
-      opacity: op,
-      ease: "power2.out",
-    });
-  }
-
-  createScrollAnimationFrom("#projects","top 100%","bottom 55%",-2000,0,-180,0.2,-5);
-  createScrollAnimationFrom(".works","top 80%","bottom 50%",1000,0,180,5,-1);
-
-  function createScrollAnimationTo(trigger, start, end, x, y, op) {
-    const animation = gsap.timeline({
-      scrollTrigger: {
-        trigger: trigger,
-        start: start,
-        end: end,
-        markers: false,
+        markers: true,
         scrub: true,
       },
     });
 
     animation.to(trigger, {
-      x: x,
-      y: y,
       opacity: op,
       ease: "power2.out",
     });
   }
 
-  createScrollAnimationTo("#title", "top 0%", "bottom 0%", -200, -200, -0.5);
-  createScrollAnimationTo("#ipsilon", "top 44%", "bottom 30%", -350, -150, 0);
-  createScrollAnimationTo(".creative", "top 60%", "bottom 30%", 500, -500, 0);
-  createScrollAnimationTo(".sub", "top 60%", "bottom 30%", -500, -500, 0);
+  // createScrollAnimationTo("#title", "top: -50%", "bottom: 100%" ,-0.5);
+  // createScrollAnimationTo("#ipsilon",  "top: 0%", "bottom: 0%" ,1);
+  createScrollAnimationTo(".prova", "top: 0%", "bottom: -40%", -0.5);
+  createScrollAnimationTo("#ipsilon", "top: 0%", "bottom: -100%", -0.5);
+  createScrollAnimationTo(".creative", "top: 70%", "bottom: 0%", -0.5);
+  createScrollAnimationTo(".sub","top: 70%", "bottom: 0%", -0.5);
 } else {
   // Non includere GSAP e/o disabilita le animazioni per la versione mobile
 }
@@ -130,4 +158,7 @@ if (window.location.pathname === "/" || window.location.pathname === "/index.htm
 
     worksContainer.appendChild(workItem);
   });
+
 }
+
+
