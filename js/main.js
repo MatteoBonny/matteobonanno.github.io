@@ -103,6 +103,11 @@ if (window.location.pathname === "/" || window.location.pathname === "/index.htm
 // worksData
   const worksData = [
     {
+      text: "Domu",
+      imgSrc: "img/Works/domu.png",
+      alt: "Domu",
+    },
+    {
       text: "Creative Curriculum",
       imgSrc: "img/Works/CreativeCurriculmBonny.png",
       alt: "Creative Curriculum",
