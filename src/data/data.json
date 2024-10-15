@@ -1,0 +1,30 @@
+{"work1":{
+"title":"Domu",
+"description":"By Pulse",
+"image":"/img/domu1.png",
+"image2":"/img/domu2.jpg",
+"image3":"/img/domu3.png",
+"image4":"/img/domu4.png",
+"video":"/video/domu_cover.mp4"
+},
+
+"work2":{
+"title":"Bonny",
+"description":"My personal brand",
+"image":"/img/mario.png",
+"image2":"/img/CreativeCurriculmBonny.png",
+"image3":"/img/mac_mockup.png",
+"image4":"/img/memoji.png",
+"video":"/video/video_logo.mp4"
+},
+"work3":{
+"title":"Video",
+"description":"My personal video",
+"image":"/img/mario.png",
+"image2":"/img/memoji.png",
+"image3":"/img/memoji.png",
+"image4":"/img/mario.png",
+"video":"/video/Esame_Bonanno.mp4"
+}
+
+}
