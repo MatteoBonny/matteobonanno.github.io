@@ -12,14 +12,16 @@ export default function LogoComponent() {
         {/* Contenuto Spline che si espande solo per l'altezza disponibile */}
         <div className="flex-grow h-0 w-full">
           <Spline
-            scene="https://prod.spline.design/Bb63zHSxfApotN9Y/scene.splinecode"
+            scene="https://prod.spline.design/8gUzGsfwI2CeLUi5/scene.splinecode"
+            // scene="https://prod.spline.design/Bb63zHSxfApotN9Y/scene.splinecode"
             className="w-full h-full"
           />
         </div>
 
         {/* Div bianco in basso a destra */}
-        <div className="absolute bottom-0 right-0 w-40 h-20 bg-white z-40" />
+        <div className="absolute bottom-0 right-0 w-40 h-20 bg-[#121212] z-40" />
     </BaseLayout>
       </div>
   );
 }
+
