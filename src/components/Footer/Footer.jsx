@@ -35,7 +35,7 @@ export default function Footer() {
             </div>
 
             <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
-                <img src="/img/io.jpeg" alt="Logo" className="w-16 sm:w-20 rounded-full" />
+                <img src="/img/io.jpeg" alt="Logo" className="w-16 sm:w-20 rounded-lg" />
                 <p className="text-xs sm:text-sm">Developed by Matteo Bonanno</p>
             </div>
         </footer>

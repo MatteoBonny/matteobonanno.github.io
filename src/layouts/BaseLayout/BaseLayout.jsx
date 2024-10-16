@@ -105,7 +105,7 @@ export default function BaseLayout({ children, isMenuOpen }) {
             className="w-full flex flex-col justify-start items-center p-0 m-0"
           >
             {children}
-            <Footer />
+            {location.pathname !== '/logo' && <Footer />}
           </div>
         </LocomotiveScrollProvider>
       )}
