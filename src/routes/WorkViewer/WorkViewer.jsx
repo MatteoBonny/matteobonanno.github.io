@@ -42,19 +42,18 @@ const WorkViewer = () => {
 
   return (
     <BaseLayout>
-      <GridLayout>
-        <div className="bg-trasparent col-span-12 pt-20 flex flex-col justify-center items-center min-h-screen text-center">
+        <div className="px-12 bg-trasparent col-span-full pt-20 flex flex-col justify-center items-center min-h-screen text-center">
           <h2 className="text-4xl font-bold mb-4">{currentWork.title}</h2>
-          <p className="text-lg mb-6">{currentWork.description}</p>
+          <p className="text-2xl mb-12">{currentWork.description}</p>
 
-          <div className="mb-6 w-full px-4 md:px-12 lg:px-24">  {/* Aggiungi padding e rendi il video largo */}
+          <div className="mb-6 w-full md: lg:">  {/* Aggiungi padding e rendi il video largo */}
             <video key={currentWork.video} className="w-full h-auto rounded-lg" autoPlay muted loop>
               <source src={currentWork.video} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>
 
-          <div className="mb-6 px-4 md:px-12 lg:px-24">
+          <div className="mb-6">
             <div className="grid grid-cols-12 gap-4">
               {/* Prima fila: 2 immagini */}
               <div className="col-span-6 md:col-span-6 lg:col-span-6 aspect-w-1 aspect-h-1">
@@ -104,7 +103,6 @@ const WorkViewer = () => {
             </button>
           </div>
         </div>
-      </GridLayout>
     </BaseLayout>
   );
 };

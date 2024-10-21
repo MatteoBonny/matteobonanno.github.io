@@ -1,6 +1,6 @@
 {"work1":{
 "title":"Domu",
-"description":"By Pulse",
+"description":"Domu is a modern, all-in-one platform designed to simplify condominium living. Developed by a team of three full-stack developers, including myself, Domu seamlessly integrates essential features to enhance residential management. From effortless rent payments to organizing community activities, managing complaints, and tracking deliveries, Domu is crafted for convenience.",
 "image":"/img/domu1.png",
 "image2":"/img/domu2.jpg",
 "image3":"/img/domu3.png",
@@ -11,10 +11,10 @@
 "work2":{
 "title":"Bonny",
 "description":"My personal brand",
-"image":"/img/mario.png",
-"image2":"/img/CreativeCurriculmBonny.png",
-"image3":"/img/mac_mockup.png",
-"image4":"/img/memoji.png",
+"image":"/img/business_card.png",
+"image2":"/img/mario.png",
+"image3":"/img/memoji.png",
+"image4":"/img/mac_mockup.png",
 "video":"/video/video_logo.mp4"
 },
 "work3":{
