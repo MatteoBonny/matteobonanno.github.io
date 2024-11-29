@@ -46,7 +46,7 @@ const WorkViewer = () => {
           <h2 className="text-4xl font-bold mb-4">{currentWork.title}</h2>
           <p className="text-2xl mb-12">{currentWork.description}</p>
 
-          <div className="mb-6 w-full md: lg:">  {/* Aggiungi padding e rendi il video largo */}
+          <div className="mb-6 w-full md: lg:">  
             <video key={currentWork.video} className="w-full h-auto rounded-lg" autoPlay muted loop>
               <source src={currentWork.video} type="video/mp4" />
               Your browser does not support the video tag.
